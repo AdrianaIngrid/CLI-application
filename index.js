@@ -1,10 +1,7 @@
 
 import { addContact, listContacts, removeContact, getContactById } from "./contacts.js";
  import { Command } from "commander";
-// listContacts();
-// addContact("Alex Maria", "alex@yahoo.com", "(123) 452-2222");
-// getContactById("vza2RIzNGIwutCVCs4mCL");
-// removeContact("8BxShM5_GO7cqUnLNpRc9");
+
 
  const program = new Command();
 program
@@ -18,9 +15,6 @@ program.parse(process.argv);
 
 const argv = program.opts();
 
-
-
-// TODO: refactorizare
 async function invokeAction({ action, id, name: contactName, email, phone }) {
   switch (action) {
     case "list":
