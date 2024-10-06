@@ -1,0 +1,22 @@
+{
+  "name": "cli-application",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "startc": "node contacts.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "commander": "^5.1.0",
+    "express": "^4.21.0",
+    "nanoid": "^5.0.7"
+  }
+}
